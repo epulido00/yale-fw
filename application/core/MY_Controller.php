@@ -22,6 +22,10 @@ class Public_Controller extends CI_Controller {
 
 		$this->template->set_partial('header', 'partials/public_header.php');
 		$this->template->set_layout('public_layout');
+
+		if($this->session->userdata('student')) {
+			$this->student = $this->session->userdata('student');
+		}
 	}
 }
 

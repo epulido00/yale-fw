@@ -193,6 +193,7 @@ body {
     padding: 20px; 
 }
 
+
 .inscripcion-content {
     max-width:700px;
 }
@@ -236,3 +237,14 @@ body {
 }
 
 
+.texto-gracias {
+    text-align: left;
+}
+
+/* Ingresar */
+
+.ingresar-box {
+    background-color: #FFFFFF;
+    width: 50%;
+    padding: 20px 50px; 
+}

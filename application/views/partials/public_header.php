@@ -7,8 +7,13 @@
             <div class = "options-header">
                 <div class = "login-links">
                     <ul>
-                        <li><a href = "#">Ingresar</a></li>
-                        <li><a href = "#">Inscripciones</a></li>
+                        <?php if($this->student): ?>
+                        <li><a href = "#">Hola, <?= explode(' ', $this->student->nombre)[0]?></a></li>
+                        <li><a href = "<?=base_url()?>logout">Cerrar sesión</a></li>
+                        <?php else: ?>
+                        <li><a href = "<?=base_url()?>ingresar">Ingresar</a></li>
+                        <li><a href = "<?=base_url()?>inscribirse">Inscripciones</a></li>
+                        <?php endif; ?>
                     </ul>
                 </div>
                 <div class = "searcher">
