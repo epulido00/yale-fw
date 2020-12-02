@@ -241,10 +241,52 @@ body {
     text-align: left;
 }
 
-/* Ingresar */
-
 .ingresar-box {
     background-color: #FFFFFF;
     width: 50%;
     padding: 20px 50px; 
+}
+
+/* FORO */
+
+.foro-box {
+    width: 100%;
+    padding: 30px;
+    background-color: #FFFFFF;
+}
+
+.foro-box table {
+    width: 100%;
+}
+
+.header-table {
+    background-color: #005F8E;
+    color: white;
+
+    padding: 5px;
+}
+
+.tema {
+    padding: 0;
+}
+
+.titulo {
+    background-color: #c0c0c0;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.subtemas {
+    width: 100%;
+    min-height: 230px;
+    border: 1px solid black;
+}
+
+.subtemas ul {
+    list-style: none;
+    padding: 5px;
+}
+
+.tema .options {
+    padding: 5px;
 }

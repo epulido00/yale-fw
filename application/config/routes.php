@@ -54,4 +54,4 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['inscribirse'] = 'inscripcion/inscribirse';
-$route['(:any)'] = 'inscripcion/$1';
+$route['ingresar'] = 'inscripcion/ingresar';
