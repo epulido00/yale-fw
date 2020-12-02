@@ -55,3 +55,6 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['inscribirse'] = 'inscripcion/inscribirse';
 $route['ingresar'] = 'inscripcion/ingresar';
+
+$route['foro/nuevo-subtema'] = 'foro/newSubtema';
+$route['foro/nuevo-subtema/(:num)'] = 'foro/newSubtema/$1';

@@ -14,6 +14,23 @@ class Foro_model extends CI_Model {
         return $this->db->get('subtemas')->result();
     }
 
+    public function addSubtema($id_tema, $data) {
+        if($data && $id_tema) {
+            $newSubtema = array(
+                'id_tema'       => $id_tema,
+                'id_autor'      => $this->student->matricula,
+                'titulo'        => $data->post('titulo'),
+                'descripcion'   => $data->post('descripcion'),
+            );
+
+            $this->db->insert('subtemas', $newSubtema);
+
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 }
 
 ?>

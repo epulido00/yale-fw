@@ -1,6 +1,9 @@
 <section>
     <div class = "foro-box">
         <h3>Foro estudiantil</h3>
+        <?php if(!$this->student): ?>
+            <div class="alert alert-warning">No eres estudiante, no puedes agregar temas</div>
+        <?php endif; ?>
         <div class = "row">
             <div class = "col-md-12 header-table">
                 Últimos temas
@@ -24,9 +27,11 @@
                                 <span>No hay subtemas de momento, agrega uno</span>
                             <?php endif; ?>
                         </ul>
+                        <?php if($this->student): ?>
                         <div class = "options">
-                            <div class = "btn btn-primary">Agregar un subtema</div>
+                            <a href = "<?=base_url()?>foro/nuevo-subtema/<?=$tema->id_tema?>"><div class = "btn btn-primary">Agregar un subtema</div></a>
                         </div>
+                        <?php endif; ?>
                     </div>
                 </div>
             <?php endforeach; ?>

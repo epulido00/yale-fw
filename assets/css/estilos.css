@@ -290,3 +290,8 @@ body {
 .tema .options {
     padding: 5px;
 }
+
+.textArea {
+    min-height: 150px;
+    max-height: 300px;
+}

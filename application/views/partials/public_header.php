@@ -9,7 +9,7 @@
                     <ul>
                         <?php if($this->student): ?>
                         <li><a href = "#">Hola, <?= explode(' ', $this->student->nombre)[0]?></a></li>
-                        <li><a href = "<?=base_url()?>logout">Cerrar sesión</a></li>
+                        <li><a href = "<?=base_url()?>inscripcion/logout">Cerrar sesión</a></li>
                         <?php else: ?>
                         <li><a href = "<?=base_url()?>ingresar">Ingresar</a></li>
                         <li><a href = "<?=base_url()?>inscribirse">Inscripciones</a></li>
