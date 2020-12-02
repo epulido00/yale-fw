@@ -20,6 +20,7 @@ class Public_Controller extends CI_Controller {
 	function __construct() {
 		parent::__construct();
 
+		$this->template->set_partial('header', 'partials/public_header.php');
 		$this->template->set_layout('public_layout');
 	}
 }

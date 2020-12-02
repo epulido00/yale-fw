@@ -1,0 +1,101 @@
+/* Header */
+
+.header {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 70px;
+}
+
+.header-content {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo img {
+    float: left;
+    width: 140px;
+}
+
+.options-header {
+    float: right;
+}
+
+.search-box {
+    border: 0px;
+    border-radius: 5px 0 0 5px;
+    width: 300px;
+    height: 30px;
+    font-size: 14px;
+    background-color: #EFEFEF;
+    margin: 0px;
+    padding: 0px 10px;
+    float: left;
+    outline: none;
+}
+
+.search-button {
+    border: 0px;
+    border-radius: 0 5px 5px 0;
+    width: 30px;
+    background-color: #005F8E;
+    height: 30px;
+    margin: 0px;
+    float: left;
+}
+
+.login-links ul {
+    list-style: none;
+    margin: 0;
+    float: right;
+}
+
+.login-links ul li {
+    margin: 0px 0px 0px 5px;
+    display: inline;
+}
+
+.login-links ul li a {
+    color: #005F8E;
+    font-weight: bold;
+}
+
+.nav-bar {
+    background-color: #0095DF;
+    width: 100%;
+    height: 40px; 
+}
+
+.nav-content {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav-content ul {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-content ul li {
+    display: inline;
+}
+
+.nav-option {
+    height: 40px;
+    float: left;
+    padding: 0px 5px;
+    background-color: #0095DF;
+    color: white;
+}
+
+.nav-option:hover {
+    background-color: #005F8E;
+}
+
+.nav-option span { 
+    line-height: 40px;
+    vertical-align: middle;
+}
+
