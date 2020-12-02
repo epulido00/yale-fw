@@ -15,7 +15,7 @@ class Admin_Controller extends CI_Controller {
 
 class Public_Controller extends CI_Controller {
 
-	public $public;
+	public $student;
 
 	function __construct() {
 		parent::__construct();

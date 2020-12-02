@@ -28,7 +28,7 @@
     <nav class = "nav-bar">
         <div class = "nav-content">
             <ul>
-                <li><a href = "#"><div class = "nav-option"><span>Inicio</span></div></a></li>
+                <li><a href = "<?=base_url()?>"><div class = "nav-option"><span>Inicio</span></div></a></li>
                 <li><a href = "#"><div class = "nav-option"><span>Noticias</span></div></a></li>
                 <li><a href = "#"><div class = "nav-option"><span>Foro estudiantil</span></div></a></li>
                 <li><a href = "#"><div class = "nav-option"><span>Calendario de eventos</span></div></a></li>

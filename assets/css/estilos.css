@@ -1,5 +1,4 @@
 /* Header */
-
 .header {
     background-color: #FFFFFF;
     width: 100%;
@@ -85,7 +84,7 @@
 .nav-option {
     height: 40px;
     float: left;
-    padding: 0px 5px;
+    padding: 0px 8px;
     background-color: #0095DF;
     color: white;
 }
@@ -108,10 +107,15 @@ section {
 }
 
 
+body {
+    background-color: #F8F8F8;
+}
+
 /* Avisos */
 .avisos {
     width: 100%;
     height: 400px;
+    margin-bottom: 20px;
 }
 
 .aviso {
@@ -133,3 +137,102 @@ section {
     font-weight: bold;
     -webkit-text-stroke: 1px black;
 }
+
+/* Noticias */
+
+.noticias {
+    width: 100%;
+}
+
+.row-noticias {
+    width: 100%;
+    background-color: #EFEFEF;
+    margin: 0; 
+    padding: 0;
+}
+
+.row-noticias .col {
+    margin: 0;
+}
+
+.noticia-principal {
+    background-color: gray;
+    cursor: pointer;
+    margin:0px 15px;
+    background-size: cover;
+    height: 600px;
+    transition: 2s;
+}
+
+.noticia-principal:hover {
+    
+}
+
+.noticia-normal {
+    background-color: gray;
+    margin:0px 15px;
+    height: 600px;
+}
+
+.noticia {
+    background-color: gray;
+    cursor: pointer;
+    height: 300px;
+    transition: 2s;
+}
+
+.noticia:hover {
+    
+}
+
+/* Inscripcion */
+
+.inscripcion-box {
+    background-color: #FFFFFF;
+    width: 70%;
+    padding: 20px; 
+}
+
+.inscripcion-content {
+    max-width:700px;
+}
+
+.carreras { 
+    width: 100%;
+    height: 500px;
+}
+
+.carrera {
+    width: 45%;
+    height: 240px;
+    margin:0px 5px 5px 0px;
+    background-color: red;
+    background-size: cover;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.selected {
+    outline: 3px solid #0095DF;
+    box-shadow: 0px 0px 20px #0095DF;
+}
+
+.btnInscripcion {
+    text-align: right;
+}
+
+.inputInscripcion {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    background-color: #EFEFEF;
+}
+
+.inputInscripcion:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    background-color: #EFEFEF;
+}
+
+
