@@ -99,3 +99,37 @@
     vertical-align: middle;
 }
 
+/* General */
+
+section {
+    max-width: 1240px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+
+/* Avisos */
+.avisos {
+    width: 100%;
+    height: 400px;
+}
+
+.aviso {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    position:relative;
+}
+
+.texto-aviso {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    vertical-align: middle;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
+}
