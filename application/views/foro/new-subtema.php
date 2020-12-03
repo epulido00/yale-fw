@@ -13,7 +13,7 @@
                 </div>
                 <div class="form-group" style = "text-align: left;">
                     <label for = "descripcion">Descripcion</label>
-                    <textarea type="text" name = "descripcion" class = "form-control inputInscripcion textArea" id = "email"></textarea>
+                    <textarea type="text" name = "descripcion" class = "form-control inputInscripcion textArea" id = "descripcion"></textarea>
                 </div>
                 <br/>
                 <div class = "btnInscripcion">
@@ -26,19 +26,22 @@
     </div>
 </section>
 <script>
+
+    CKEDITOR.replace( 'descripcion' );
+
     $('#new-subtema').on('submit', function(e) {
 
         e.preventDefault();
         e.stopImmediatePropagation();
 
         var val = true;
-        $('#new-subtema :input').each(function(){
-            if( $(this).attr('type') != 'submit' ){
-                if($(this).val() == '') {
-                    val = false;
-                }
-            }
-        });
+        var descripcion = CKEDITOR.instances.descripcion.getData();
+        var titulo = $('#titulo').val();
+
+        if(titulo == '' || descripcion == '') {
+            val = false;
+        }
+        
 
         if(val) {
             $(this).off("submit");

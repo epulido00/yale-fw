@@ -54,3 +54,6 @@
         <?php endif; ?>
     </div>
 </section>
+<script>
+    CKEDITOR.replace( 'comentario' );
+</script>

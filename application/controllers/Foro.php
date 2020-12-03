@@ -40,6 +40,7 @@ class Foro extends Public_Controller {
 
         $data['subtemas'] = $this->foro_model->getAllSubtemas($id_tema);
 
+        $this->template->title($data['tema']->nombre);
         $this->template->build('foro/temas.php', $data);
     }
 
@@ -51,6 +52,7 @@ class Foro extends Public_Controller {
             redirect(base_url().'foro');
         }
 
+        $this->template->title($data['subtema']->titulo);
         $this->template->build('foro/subtema.php', $data);
     }
 

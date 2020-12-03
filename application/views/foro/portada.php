@@ -11,7 +11,7 @@
             <?php foreach($temas as $tema): ?>
                 <div class = "col-md-4 tema">
                     <div class = "titulo">
-                        <?= $tema->nombre ?>
+                        <a href = "<?=base_url()?>foro/tema/<?=$tema->id_tema?>/<?=$tema->slug?>"><?= $tema->nombre ?></a>
                     </div>
                     <div class = "subtemas">
                         <ul>
