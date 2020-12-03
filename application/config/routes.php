@@ -58,3 +58,9 @@ $route['ingresar'] = 'inscripcion/ingresar';
 
 $route['foro/nuevo-subtema'] = 'foro/newSubtema';
 $route['foro/nuevo-subtema/(:num)'] = 'foro/newSubtema/$1';
+
+$route['foro/tema'] = 'foro/viewTema';
+$route['foro/tema/(:any)/(:any)'] = 'foro/viewTema/$1/$2';
+
+$route['foro/subtema'] = 'foro/viewSubtema';
+$route['foro/subtema/(:any)/(:any)'] = 'foro/viewSubtema/$1/$2';

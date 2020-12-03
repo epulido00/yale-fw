@@ -278,7 +278,7 @@ body {
 
 .subtemas {
     width: 100%;
-    min-height: 230px;
+    min-height: 250px;
     border: 1px solid black;
 }
 
@@ -294,4 +294,37 @@ body {
 .textArea {
     min-height: 150px;
     max-height: 300px;
+}
+
+.titulo-subtema {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.fecha-subtema {
+    color: gray;
+}
+
+.box-subtema {
+    min-height: 100px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.box-autor {
+    background-color: #c4c4c4;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.box-descripcion {
+    padding: 5px 10px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.box-preview-sub {
+    border: 1px solid black;
+}
+
+.fecha-preview-sub {
+    color: gray;
 }

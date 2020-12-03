@@ -18,10 +18,10 @@
                             <?php $subtemas = $this->foro_model->getSubtemas($tema->id_tema) ?>
                             <?php if(count($subtemas) > 0): ?>
                                 <?php foreach($subtemas as $subtema): ?>
-                                <li><a href = "#"><?= $subtema->titulo ?></a></li>
+                                <li><a href = "<?=base_url()?>foro/subtema/<?=$subtema->id_subtema?>/<?=$subtema->slug?>"><?= $subtema->titulo ?></a></li>
                                 <?php endforeach; ?>
                                 <?php if(count($subtemas) > 5): ?>
-                                <li><a href = "#">Ver todos...</a></li>
+                                <li><a href = "<?=base_url()?>foro/tema/<?=$tema->id_tema?>/<?=$tema->slug?>">Ver todos...</a></li>
                                 <?php endif; ?>
                             <?php else: ?>
                                 <span>No hay subtemas de momento, agrega uno</span>
