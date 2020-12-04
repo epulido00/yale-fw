@@ -15,6 +15,20 @@ class Admin_model extends CI_Model {
         }
     }
 
+    public function addEvento($data) {
+        if($data) {
+            $newEvento = array(
+                'nombre' => $data->post('nombre'),
+                'descripcion' => $data->post('descripcion'),
+                'fecha_evento' => date_format(date_create($data->post('fecha_evento')), 'Y-m-d H:i:s')
+            );
+
+            //date_format(date_create($comentario->fecha_creacion), 'j \d\e F \d\e\l Y \a \l\a\s h:i a')
+
+            $this->db->insert('eventos', $newEvento);
+        }
+    }
+
 }
 
 

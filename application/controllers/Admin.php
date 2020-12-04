@@ -26,4 +26,13 @@ class Admin extends Admin_Controller {
 		$this->template->build('admin/noticias');
 	}
 
+	public function eventos() {
+
+		if(!empty($_POST)) {
+            $this->admin_model->addEvento($this->input);
+		}
+
+		$this->template->build('admin/eventos');
+	}
+
 }
