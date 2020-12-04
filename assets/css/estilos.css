@@ -344,9 +344,31 @@ body {
 
 .box-avisos {
     width: 30%;
-    height: 20px;
+    height: 200px;
     float: left;
-    background-color: red; 
+}
+
+.aviso-lateral {
+    width: 100%;
+    height: 200px;
+    float: left;
+    margin-bottom: 5px;
+    background-size: cover;
+    position:relative;
+}
+
+.texto-aviso-lateral{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    vertical-align: middle;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
 }
 
 .row-noticias-portada {
@@ -482,5 +504,28 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     width: 230px;
-    height: 150px;
+    height: 80px;
+    margin-bottom: 5px;
+}
+
+.btn-evento {
+    float: right;
+    border: none;
+    background-color: #005F8E;
+    border: 1px solid #005F8E;
+    color: #FFF;
+}
+
+.fecha {
+    width: 100%;
+    height: 20px;
+}
+
+.fecha small {
+    float: left;
+}
+
+.fecha .etiqueta {
+    float: right;
+    color: red;
 }

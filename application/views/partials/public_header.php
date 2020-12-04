@@ -36,7 +36,7 @@
                 <li><a href = "<?=base_url()?>"><div class = "nav-option"><span>Inicio</span></div></a></li>
                 <li><a href = "<?=base_url()?>noticias"><div class = "nav-option"><span>Noticias</span></div></a></li>
                 <li><a href = "<?=base_url()?>foro"><div class = "nav-option"><span>Foro estudiantil</span></div></a></li>
-                <li><a href = "#"><div class = "nav-option"><span>Calendario de eventos</span></div></a></li>
+                <li><a href = "<?=base_url()?>eventos"><div class = "nav-option"><span>Calendario de eventos</span></div></a></li>
             </ul>
         </div>
     </nav>

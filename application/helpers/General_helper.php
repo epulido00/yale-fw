@@ -26,4 +26,10 @@
         return $text;
     }
 
+    function getAvisos() {
+        $CI = &get_instance();
+
+        return $CI->db->get('avisos')->result();
+    }
+
 ?>
