@@ -3,7 +3,7 @@
         <div class = "row row-noticias-portada">
             <?php foreach($noticias as $noticia): ?>
             <div class = "col-md-6 box-noticia-portada">
-                <a href = "">
+                <a href = "<?=base_url()?>noticias/<?=$noticia->id_noticia?>/<?=$noticia->slug?>">
                     <div class = "noticia-portada">
                         <div class = "img-noticia-portada" style = "background: url(<?=base_url()?>assets/img/noticias/<?=$noticia->imagen?>) no-repeat center center"></div>
                         <div class = "content-noticia-portada">

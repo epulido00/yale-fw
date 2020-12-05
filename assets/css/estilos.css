@@ -342,6 +342,30 @@ body {
     margin-right: 5%;
 }
 
+.box-noticia-view {
+    width: 65%;
+    height: auto;
+    float: left;
+    padding: 10px;
+    margin-right: 5%;
+    margin-bottom: 30px;
+}
+
+.noticia-titulo {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.noticia-img {
+    width: 100%;
+    height: 400px;
+}
+
+.noticia-fecha {
+    color: gray;
+}
+
 .box-avisos {
     width: 30%;
     height: 200px;
