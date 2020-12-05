@@ -17,8 +17,8 @@
                     </ul>
                 </div>
                 <div class = "searcher">
-                    <form action="#">
-                        <input class = "search-box" type = "input" placeholder = "Realiza tu búsqueda..." />
+                    <form action="<?=base_url()?>inicio/busqueda" method = "GET">
+                        <input name = "q" class = "search-box" type = "input" placeholder = "Realiza tu búsqueda..." />
                         <button class = "search-button" type = "submit">
                             <svg width="12px" height="12px" viewBox="0 0 16 16" class="bi bi-search" fill="white" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>

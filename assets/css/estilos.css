@@ -548,3 +548,34 @@ body {
     float: right;
     color: red;
 }
+
+/* Resultados */
+
+.box-resultados {
+    width: 65%;
+    height: auto;
+    float: left;
+    margin-right: 5%;
+}
+
+.row-resultado {
+    margin: 0;
+}
+
+.resultado {
+    padding: 15px;
+    width: 100%;
+    max-height: 150px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 5px #c0c0c0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.resultado .link-title {
+    font-size: 16px;
+}
+
+.resultado .descripcion {
+    height: auto;
+}
